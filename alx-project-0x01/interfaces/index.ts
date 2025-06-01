@@ -98,4 +98,7 @@ export interface UserModalProps {
   isOpen: boolean;
   user: UserData | null;
   onClose: () => void;
+  onSubmit: (user: UserData)=> void;
+  onDelete?: (userId: number) => void; // Optional delete callback
 }
+
