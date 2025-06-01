@@ -1,3 +1,4 @@
+import { UserProps } from '@/interfaces';
 export interface Geo {
   lat: string;
   lng: string;
@@ -98,7 +99,7 @@ export interface UserModalProps {
   isOpen: boolean;
   user: UserData | null;
   onClose: () => void;
-  onSubmit: (user: UserData)=> void;
+  onSubmit: (user: UserProps)=> void;
   onDelete?: (userId: number) => void; // Optional delete callback
 }
 
